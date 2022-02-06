@@ -1,0 +1,10 @@
+#screen-container {
+    height: 212px;
+    width: 254px;
+    margin: 19px auto;
+    border: 3px solid black;
+    border-radius: 10px;
+    overflow: hidden;
+    background: url('../public/images/ipod-background.jpeg');
+    background-size: cover;
+}

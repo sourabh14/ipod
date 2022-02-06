@@ -1,0 +1,52 @@
+#wheel-container {
+	height: 200px;
+	width: 200px;
+	background-color: #464646;
+	border-radius: 50%;
+	margin: 26px auto 20px;
+	position: relative;
+} 
+
+.action-item {
+	display: inline-block;
+	color: white;
+	font-size: 1rem;
+	font-family: sans-serif;
+}
+
+#enter {
+	position: absolute;
+	left: 60px;
+    top: 60px;
+    height: 80px;
+    width: 80px;
+	color: black;
+	text-align: center;
+	background-color: #7e7e7e;
+	border-radius: 50%;
+}
+
+#menu {
+	position: absolute;
+	font-weight: bold;
+	left: 80px;
+	top: 20px;
+}
+
+#fwd {
+	position: absolute;
+	right: 20px;
+	top: 94px;
+}
+
+#bkwd {
+	position: absolute;
+	left: 20px;
+	top: 94px;
+}
+
+#pause-play {
+	position: absolute;
+	left: 85px;
+	bottom: 20px;
+}

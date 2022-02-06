@@ -1,0 +1,10 @@
+.App {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  height: 493px;
+  width: 292px;
+  transform: translateX(-50%);
+  background-image: url('../public/images/ipod-classic.jpg');
+  background-size: cover;
+}
