@@ -1,24 +1,47 @@
 import React from 'react';
+import Menu from './screens/Menu'
+import CoverFlow from './screens/CoverFlow'
+import Music from './screens/Music'
+import Games from './screens/Games'
+import Settings from './screens/Settings'
+
 import './Screen.css'
-//import ZingTouch from 'zingtouch';
 
 class Screen extends React.Component {
-    componentDidMount() {
-       
-    }
 
     render() {
-        return (
-            <div id="screen-container">
-                <div id="screen" className="list-group w-50 h-100 bg-white opacity-75">
-                    <h4 class="mx-auto my-2">iPod.js</h4>
-                    <div className="list-group-item border-0 py-2 active">Cover Flow</div>
-                    <div className="list-group-item border-0 py-2">Music</div>
-                    <div className="list-group-item border-0 py-2">Games</div>
-                    <div className="list-group-item border-0 py-2">Settings</div>
-                </div>
-            </div>
-        );
+        // Conditional rendering according to page selected
+        switch(this.props.page) {
+            case "Menu": return (
+                    <div id="screen-container">
+                        <Menu activeIndex={this.props.activeIndex}/>
+                    </div>);
+                break;
+
+            case "CoverFlow": return (
+                    <div id="screen-container">
+                        <CoverFlow />
+                    </div>); 
+                break;
+
+            case "Music": return (
+                <div id="screen-container">
+                    <Music />
+                </div>); 
+                break;
+
+            case "Games": return (
+                <div id="screen-container">
+                    <Games />
+                </div>); 
+                break;
+
+            case "Settings": return (
+                <div id="screen-container">
+                    <Settings />
+                </div>);  
+                break;
+        }
     }
 
 }

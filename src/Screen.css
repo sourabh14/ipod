@@ -7,4 +7,6 @@
     overflow: hidden;
     background: url('../public/images/ipod-background.jpeg');
     background-size: cover;
+    display: flex;
+    justify-content: space-between;
 }
