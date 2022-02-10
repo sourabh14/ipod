@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+# iPod App
 
 iPod simulation using React JS
 
